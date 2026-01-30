@@ -1,0 +1,185 @@
+/* ====================
+    About Me
+======================= */
+
+.about-me {
+    width: 100%;
+}
+
+.about-me__title {
+    margin-bottom: var(--space-4);
+}
+
+.about-me__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: var(--space-4);
+}
+
+.about-me__img-wrapper {
+    width: 360px;
+}
+
+.about-me__img {
+    width: 100%;
+}
+
+.about-me__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: var(--space-2);
+    row-gap: var(--space-6);
+}
+
+.about-me__block {
+    width: 100%;
+}
+
+.about-me__heading {
+    color: var(--color-brand-primary);
+    margin-bottom: var(--space-3);
+}
+
+.about-me__item {
+    padding-left: var(--space-1);
+    margin-bottom: var(--space-2);
+
+    &::before {
+        content: "•";
+        margin-right: var(--space-1);
+    }
+}
+
+.about-me__value {
+    display: inline-block;
+    margin-left: var(--space-1);
+    color: var(--color-text-muted);
+    font-weight: var(--font-weight-thin);
+}
+
+
+
+/* ====================
+    Life
+======================= */
+
+.life {
+    width: 100%;
+}
+
+.life__title {
+    margin-bottom: var(--space-4);
+}
+
+.life__description {
+    margin-bottom: var(--space-4);
+}
+
+.life__card-wrapper {
+    width: 100%;
+}
+
+.life__card-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-4);
+}
+
+.life__card-item {
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0,0,0,0.05);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.life__card-img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+}
+
+.life__card-text {
+    width: 100%;
+    padding: var(--space-2) var(--space-4);
+}
+
+.life__card-title {
+    color: var(--color-brand-primary);
+    margin-bottom: var(--space-1);
+}
+
+.life__card-description {
+    color: var(--color-text-muted);
+}
+
+
+
+/* ====================
+    Media
+======================= */
+
+@media screen and (max-width: 1024px) {
+
+.life {
+    &__card-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+}
+
+@media screen and (max-width: 768px) {
+
+.about-me {
+    &__title {
+        text-align: center;
+    }
+
+    &__content {
+        flex-direction: column;
+    }
+
+    &__grid {
+        column-gap: var(--space-1);
+        row-gap: var(--space-4);
+    }
+}
+
+.life {
+    &__title {
+        text-align: center;
+    }
+
+    &__description {
+        text-align: center;
+    }
+}
+
+}
+
+@media screen and (max-width: 430px) {
+
+.about-me {
+    &__grid {
+        text-align: center;
+        grid-template-columns: 1fr;
+    }
+
+    &__img-wrapper {
+        width: 240px;
+    }
+}
+
+.life {
+    &__card-list {
+        grid-template-columns: 1fr;
+    }
+
+    &__card-img {
+        height: 240px;
+    }
+}
+
+}
+

@@ -60,18 +60,29 @@
         --font-size-md: 1.3rem;
         --font-size-sm: 1.1rem;
 
-        --space-7: 3.2rem;
+        --space-1: 0.2rem;
+        --space-2: 0.6rem;
+        --space-3: 1rem;
+        --space-4: 1.4rem;
+        --space-5: 2.0rem;
         --space-6: 2.4rem;
+        --space-7: 3.2rem;
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 430px) {
     :root {
         --font-size-2xl: 2.4rem;
         --font-size-xl: 1.6rem;
         --font-size-lg: 1.3rem;
         --font-size-md: 1rem;
-        --font-size-sm: 0.8rem;
+        --font-size-sm: 0.9rem;
+
+        --space-3: 0.8rem;
+        --space-4: 1.2rem;
+        --space-5: 1.8rem;
+        --space-6: 2.2rem;
+        --space-7: 3rem;
     }
 }
 

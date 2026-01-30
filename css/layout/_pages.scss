@@ -22,3 +22,19 @@ body.is-locked {
         margin-bottom: 0;
     }
 }
+
+.page--about,
+.page--work,
+.page--contact {
+    padding-top: 150px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .page--about,
+    .page--work,
+    .page--contact {
+        padding-top: 100px;
+    }
+
+}

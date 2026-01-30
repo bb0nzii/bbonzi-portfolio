@@ -213,7 +213,7 @@
 }
 
 .workspace__content {
-    padding: 0 var(--space-2);
+    padding: 0 var(--space-4);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -242,6 +242,23 @@
 /* ====================
     Media
 ======================= */
+
+@media screen and (max-width: 1024px) {
+
+.hero {
+    &__content {
+        top: 320px;
+    }
+}
+
+.workspace {
+    &__image {
+        border-radius: 16px;
+    }
+}
+
+}
+
 
 @media screen and (max-width: 768px) {
 

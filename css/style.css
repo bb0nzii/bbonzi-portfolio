@@ -120,86 +120,32 @@ a {
     --font-size-lg: 1.6rem;
     --font-size-md: 1.3rem;
     --font-size-sm: 1.1rem;
-    --space-7: 3.2rem;
+    --space-1: 0.2rem;
+    --space-2: 0.6rem;
+    --space-3: 1rem;
+    --space-4: 1.4rem;
+    --space-5: 2.0rem;
     --space-6: 2.4rem;
+    --space-7: 3.2rem;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 430px) {
   :root {
     --font-size-2xl: 2.4rem;
     --font-size-xl: 1.6rem;
     --font-size-lg: 1.3rem;
     --font-size-md: 1rem;
-    --font-size-sm: 0.8rem;
+    --font-size-sm: 0.9rem;
+    --space-3: 0.8rem;
+    --space-4: 1.2rem;
+    --space-5: 1.8rem;
+    --space-6: 2.2rem;
+    --space-7: 3rem;
   }
 }
 /*
 레이아웃과 간격은 Bootstrap 유틸리티를 사용하고,
 타이포그래피와 컬러는 프로젝트 디자인 토큰으로 분리해 관리했습니다.
-*/
-/*
-@font-face {
-   font-family: 'Pretendard';
-   font-weight: 900;
-   font-display: swap;
-   src: local('Pretendard Black'), url(./woff2/Pretendard-Black.woff2) format('woff2'), url(./woff/Pretendard-Black.woff) format('woff');
-}
-
-@font-face {
-   font-family: 'Pretendard';
-   font-weight: 800;
-   font-display: swap;
-   src: local('Pretendard ExtraBold'), url(./woff2/Pretendard-ExtraBold.woff2) format('woff2'), url(./woff/Pretendard-ExtraBold.woff) format('woff');
-}
-
-@font-face {
-   font-family: 'Pretendard';
-   font-weight: 700;
-   font-display: swap;
-   src: local('Pretendard Bold'), url(./woff2/Pretendard-Bold.woff2) format('woff2'), url(./woff/Pretendard-Bold.woff) format('woff');
-}
-
-@font-face {
-   font-family: 'Pretendard';
-   font-weight: 600;
-   font-display: swap;
-   src: local('Pretendard SemiBold'), url(./woff2/Pretendard-SemiBold.woff2) format('woff2'), url(./woff/Pretendard-SemiBold.woff) format('woff');
-}
-
-@font-face {
-   font-family: 'Pretendard';
-   font-weight: 500;
-   font-display: swap;
-   src: local('Pretendard Medium'), url(./woff2/Pretendard-Medium.woff2) format('woff2'), url(./woff/Pretendard-Medium.woff) format('woff');
-}
-
-@font-face {
-   font-family: 'Pretendard';
-   font-weight: 400;
-   font-display: swap;
-   src: local('Pretendard Regular'), url(./woff2/Pretendard-Regular.woff2) format('woff2'), url(./woff/Pretendard-Regular.woff) format('woff');
-}
-
-@font-face {
-   font-family: 'Pretendard';
-   font-weight: 300;
-   font-display: swap;
-   src: local('Pretendard Light'), url(./woff2/Pretendard-Light.woff2) format('woff2'), url(./woff/Pretendard-Light.woff) format('woff');
-}
-
-@font-face {
-   font-family: 'Pretendard';
-   font-weight: 200;
-   font-display: swap;
-   src: local('Pretendard ExtraLight'), url(./woff2/Pretendard-ExtraLight.woff2) format('woff2'), url(./woff/Pretendard-ExtraLight.woff) format('woff');
-}
-
-@font-face {
-   font-family: 'Pretendard';
-   font-weight: 100;
-   font-display: swap;
-   src: local('Pretendard Thin'), url(./woff2/Pretendard-Thin.woff2) format('woff2'), url(./woff/Pretendard-Thin.woff) format('woff');
-}
 */
 .page--main .header {
   background-color: transparent;
@@ -220,6 +166,19 @@ body.is-locked {
   margin-bottom: 0;
 }
 
+.page--about,
+.page--work,
+.page--contact {
+  padding-top: 150px;
+}
+
+@media screen and (max-width: 768px) {
+  .page--about,
+  .page--work,
+  .page--contact {
+    padding-top: 100px;
+  }
+}
 .scroll-animate {
   opacity: 0;
   transform: translateY(50px);
@@ -335,6 +294,11 @@ body.is-locked {
   font-weight: 600;
 }
 
+.mobile-menu a.is-active {
+  opacity: 1;
+  text-decoration: underline;
+}
+
 @media (max-width: 768px) {
   .header {
     height: 60px;
@@ -380,6 +344,7 @@ body.is-locked {
 }
 .footer__email-link:hover {
   text-decoration: underline;
+  text-decoration-thickness: 4px;
 }
 .footer__row {
   display: flex;
@@ -450,6 +415,11 @@ body.is-locked {
     margin-bottom: 8px;
   }
 }
+@media (max-width: 430px) {
+  .footer__notice {
+    font-size: var(--font-size-sm);
+  }
+}
 .scroll-top {
   position: fixed;
   right: 2%;
@@ -459,6 +429,7 @@ body.is-locked {
   justify-content: center;
   border: none;
   padding: 0;
+  mix-blend-mode: multiply;
 }
 
 .scroll-top__btn {
@@ -685,7 +656,7 @@ body.is-locked {
 }
 
 .workspace__content {
-  padding: 0 var(--space-2);
+  padding: 0 var(--space-4);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -711,6 +682,14 @@ body.is-locked {
 /* ====================
     Media
 ======================= */
+@media screen and (max-width: 1024px) {
+  .hero__content {
+    top: 320px;
+  }
+  .workspace__image {
+    border-radius: 16px;
+  }
+}
 @media screen and (max-width: 768px) {
   .hero__content {
     gap: var(--space-1);
@@ -758,5 +737,159 @@ body.is-locked {
   .workspace__link-btn {
     width: 36px;
     height: 36px;
+  }
+}
+/* ====================
+    About Me
+======================= */
+.about-me {
+  width: 100%;
+}
+
+.about-me__title {
+  margin-bottom: var(--space-4);
+}
+
+.about-me__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: var(--space-4);
+}
+
+.about-me__img-wrapper {
+  width: 360px;
+}
+
+.about-me__img {
+  width: 100%;
+}
+
+.about-me__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: var(--space-2);
+       column-gap: var(--space-2);
+  row-gap: var(--space-6);
+}
+
+.about-me__block {
+  width: 100%;
+}
+
+.about-me__heading {
+  color: var(--color-brand-primary);
+  margin-bottom: var(--space-3);
+}
+
+.about-me__item {
+  padding-left: var(--space-1);
+  margin-bottom: var(--space-2);
+}
+.about-me__item::before {
+  content: "•";
+  margin-right: var(--space-1);
+}
+
+.about-me__value {
+  display: inline-block;
+  margin-left: var(--space-1);
+  color: var(--color-text-muted);
+  font-weight: var(--font-weight-thin);
+}
+
+/* ====================
+    Life
+======================= */
+.life {
+  width: 100%;
+}
+
+.life__title {
+  margin-bottom: var(--space-4);
+}
+
+.life__description {
+  margin-bottom: var(--space-4);
+}
+
+.life__card-wrapper {
+  width: 100%;
+}
+
+.life__card-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-4);
+}
+
+.life__card-item {
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.life__card-img {
+  width: 100%;
+  height: 360px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.life__card-text {
+  width: 100%;
+  padding: var(--space-2) var(--space-4);
+}
+
+.life__card-title {
+  color: var(--color-brand-primary);
+  margin-bottom: var(--space-1);
+}
+
+.life__card-description {
+  color: var(--color-text-muted);
+}
+
+/* ====================
+    Media
+======================= */
+@media screen and (max-width: 1024px) {
+  .life__card-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-me__title {
+    text-align: center;
+  }
+  .about-me__content {
+    flex-direction: column;
+  }
+  .about-me__grid {
+    -moz-column-gap: var(--space-1);
+         column-gap: var(--space-1);
+    row-gap: var(--space-4);
+  }
+  .life__title {
+    text-align: center;
+  }
+  .life__description {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 430px) {
+  .about-me__grid {
+    text-align: center;
+    grid-template-columns: 1fr;
+  }
+  .about-me__img-wrapper {
+    width: 240px;
+  }
+  .life__card-list {
+    grid-template-columns: 1fr;
+  }
+  .life__card-img {
+    height: 240px;
   }
 }/*# sourceMappingURL=style.css.map */

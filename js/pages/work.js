@@ -80,7 +80,7 @@ export default function initWorkPage() {
                   toolIcons[tool] ?? "assets/tools/default.png";
 
                 return `
-                  <li class="work__tool">
+                  <li class="work__tool icon-lg">
                     <img
                       src="${iconPath}"
                       alt="${tool}"
@@ -90,18 +90,17 @@ export default function initWorkPage() {
                 `;
               })
               .join("")}
-          </ul>
 
-          <!-- 링크가 있을 때만 버튼 출력 -->
-          ${
-            work.link
-              ? `
-                <a href="${work.link}" target="_blank" class="work__card-link">
-                  <img src="assets/icon/arrow-right.svg">
-                </a>
-              `
-              : ""
-          }
+              ${
+                work.link
+                  ? `
+                    <a href="${work.link}" target="_blank" class="work__card-link">
+                      <img src="assets/icon/arrow-right.svg">
+                    </a>
+                  `
+                  : ""
+              }
+          </ul>
 
         </div>
       `;

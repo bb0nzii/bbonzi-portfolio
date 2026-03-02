@@ -9,7 +9,7 @@ export const worksData = [
     title: "포토이즘스튜디오 춘천점 인수인계",
     desc: "포토이즘스튜디오 춘천점 매장 인수인계 업무 효율화를 위해 제작한 내부용 시스템입니다. <br> 실제 운영 데이터는 포함하지 않고, 데모용 콘텐츠로 재구성했습니다.",
     date: "제작 : 2025.11 <br> 리팩토링 : 2026.01",
-    image: "assets/workspace/coding/meedream.jpg",
+    image: "assets/workspace/coding/photoism.jpg",
 
     tools: ["html", "scss", "js", "bootstrap", "firebase"],
 
@@ -21,7 +21,7 @@ export const worksData = [
     title: "트리꾸미기 게임",
     desc: "크리스마스 트리꾸미기 게임입니다.",
     date: "제작 : 2025.12",
-    image: "assets/workspace/coding/meedream.jpg",
+    image: "assets/workspace/coding/tree-decorator.jpg",
 
     tools: ["html", "scss", "js", "illustrator", "procreate"],
 

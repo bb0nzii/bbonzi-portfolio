@@ -28,13 +28,13 @@ export default function initLifeCards() {
         },
         { 
             img: "assets/logo/sunflower.png",
-            title: "카드 제목 6",
-            description: "카드 내용 6" 
+            title: "미디어 영상캠프 참여",
+            description: "드라마 기획 및 촬영" 
         },
         { 
             img: "assets/logo/sunflower.png",
-            title: "카드 제목 7",
-            description: "카드 내용 7" 
+            title: "경민언니 포토샵 강의",
+            description: "뽀윤지애 개쩌는 강의력" 
         },
         { 
             img: "assets/logo/sunflower.png",

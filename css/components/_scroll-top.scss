@@ -10,19 +10,9 @@
     mix-blend-mode: multiply;
 }
 
-.scroll-top__btn {
-    width: 64px;
-    height: 64px;
-}
-
 @media screen and (max-width: 768px) {
     .scroll-top {
         right: 5%;
         bottom: 2%;
-    }
-
-    .scroll-top__btn {
-        width: 36px;
-        height: 36px;
     }
 }

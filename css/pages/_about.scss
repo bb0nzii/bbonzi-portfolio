@@ -122,6 +122,12 @@
 
 @media screen and (max-width: 1024px) {
 
+.about-me {
+    &__content {
+        flex-direction: column;
+    }
+}
+
 .life {
     &__card-list {
         grid-template-columns: repeat(2, 1fr);
@@ -135,10 +141,6 @@
 .about-me {
     &__title {
         text-align: center;
-    }
-
-    &__content {
-        flex-direction: column;
     }
 
     &__grid {

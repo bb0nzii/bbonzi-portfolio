@@ -1,0 +1,25 @@
+.contact {
+    width: 100%;
+}
+
+.contact__title {
+    margin-bottom: var(--space-4);
+}
+
+.contact__list {
+    border: 1px solid red;
+    display: grid;
+    flex-direction: column;
+    gap: var(--space-3);
+}
+
+.contact__item {
+    background-color: var(--color-brand-primary);
+    border-radius: 48px;
+}
+
+.contact__link {
+    display: flex;
+    color: var(--color-text-inverse);
+    align-items: center;
+}

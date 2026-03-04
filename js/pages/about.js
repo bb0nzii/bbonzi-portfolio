@@ -24,12 +24,12 @@ export default function initLifeCards() {
         { 
             img: "assets/about/card5.jpg",
             title: "MBC 컴퓨터 아카데미 수료",
-            description: "카드 내용 5" 
+            description: "디자인과 코딩을 배우기 위해 <챗GPT 생성형 AI를 활용한 반응형 웹콘텐츠(영상제작&코딩) 개발기획자 양성> 6개월 수료" 
         },
         { 
             img: "assets/about/card6.jpg",
             title: "미디어 영상캠프 참여",
-            description: "드라마 기획 및 촬영" 
+            description: "스토리보드 기획부터 촬영과 편집까지 모두 참여하여 드라마 기획 및 촬영" 
         },
         { 
             img: "assets/logo/sunflower.png",

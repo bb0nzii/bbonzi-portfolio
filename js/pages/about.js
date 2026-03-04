@@ -22,18 +22,18 @@ export default function initLifeCards() {
             description: "다큐멘터리 제작 및 촬영을 위해 춘천에서 고흥, 원주까지 떠난 여정" 
         },
         { 
-            img: "assets/logo/sunflower.png",
+            img: "assets/about/card5.jpg",
             title: "MBC 컴퓨터 아카데미 수료",
             description: "카드 내용 5" 
         },
         { 
-            img: "assets/logo/sunflower.png",
+            img: "assets/about/card6.jpg",
             title: "미디어 영상캠프 참여",
             description: "드라마 기획 및 촬영" 
         },
         { 
             img: "assets/logo/sunflower.png",
-            title: "경민언니 포토샵 강의",
+            title: "",
             description: "뽀윤지애 개쩌는 강의력" 
         },
         { 

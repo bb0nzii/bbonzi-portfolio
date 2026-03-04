@@ -73,23 +73,26 @@ export default function initWorkPage() {
 
           <!-- 사용 툴 아이콘 출력 -->
           <ul class="work__card-tools">
-            ${(work.tools ?? [])
-              .map((tool) => {
-                // 아이콘 없으면 default 처리
-                const iconPath =
-                  toolIcons[tool] ?? "assets/tools/default.png";
 
-                return `
-                  <li class="work__tool icon-lg">
-                    <img
-                      src="${iconPath}"
-                      alt="${tool}"
-                      class="work__tool-icon"
-                    >
-                  </li>
-                `;
-              })
-              .join("")}
+            <div class="work__tool-group">
+              ${(work.tools ?? [])
+                .map((tool) => {
+                  // 아이콘 없으면 default 처리
+                  const iconPath =
+                    toolIcons[tool] ?? "assets/tools/default.png";
+
+                  return `
+                    <li class="work__tool icon-lg">
+                      <img
+                        src="${iconPath}"
+                        alt="${tool}"
+                        class="work__tool-icon"
+                      >
+                    </li>
+                  `;
+                })
+                .join("")}
+              </div>
 
               ${
                 work.link
@@ -109,7 +112,7 @@ export default function initWorkPage() {
     });
 
     // ============================
-    // Modal 기능 (웹콘텐츠만)
+    // Modal 기능
     // ============================
 
     const modal = document.querySelector("#workModal");

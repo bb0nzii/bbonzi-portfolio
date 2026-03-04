@@ -10,25 +10,25 @@ export default function initWorkspace() {
       title: "Coding",
       desc: "html, Vue 등을 활용한 웹사이트입니다.",
       link: "work.html#coding",
-      image: "assets/workspace/thumnail/thumnail.jpg"
+      image: "assets/workspace/thumbnail/thumbnail_coding.jpg"
     },
     {
       title: "Web Content",
       desc: "Photoshop, Illustrator 등을 활용한 웹 콘텐츠입니다.",
       link: "work.html#content",
-      image: "assets/workspace/thumnail/thumnail.jpg"
+      image: "assets/workspace/thumbnail/thumbnail_webcontent.jpg"
     },
     {
       title: "Logo Design",
       desc: "Medibang Paint, Illustrator 등을 활용한 로고 디자인입니다.",
       link: "work.html#logo",
-      image: "assets/workspace/thumnail/thumnail.jpg"
+      image: "assets/workspace/thumbnail/thumbnail_logo.jpg"
     },
     {
       title: "Video Content",
       desc: "Premiere Pro, After Effect 등을 활용한 영상 콘텐츠입니다.",
       link: "work.html#video",
-      image: "assets/workspace/thumnail/thumnail.jpg"
+      image: "assets/workspace/thumbnail/thumbnail_video.jpg"
     },
   ];
 
@@ -50,7 +50,7 @@ export default function initWorkspace() {
                 </div>
 
                 <a class="workspace__link" href="${item.link}">
-                    <img src="assets/icon/arrow-right.svg" class="workspace__link-btn">
+                    <img src="assets/icon/arrow-right.svg" class="icon-lg">
                 </a>
             </div>
         </li>

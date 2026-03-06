@@ -145,6 +145,15 @@ export const worksData = [
   /* =========================
   Logo Design
   ========================= */
+  {
+    category: "logo",
+    title: "Epi_C",
+    desc: "강원대학교 제40대 문화인류학과 'Epi_C' 학생회의 로고를 제작하였습니다.",
+    date: "제작 : 2026.02",
+    image: "assets/workspace/logo/epic.png",
+
+    tools: ["illustrator"],
+  },
 
   {
     category: "logo",

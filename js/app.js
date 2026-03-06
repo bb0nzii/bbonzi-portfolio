@@ -15,6 +15,7 @@ import initCursor from "./common/cursor.js";
 import initMainPage from "./pages/main.js";
 import initLifeCards from "./pages/about.js";
 import initWorkPage from "./pages/work.js";
+import initFaqAccordion from './pages/contact.js';
 
 document.addEventListener("DOMContentLoaded", () => {
     // -- 1. 헤더/푸터 include 먼저 실행
@@ -39,5 +40,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (document.body.classList.contains("page--work")) {
         initWorkPage();
+    }
+
+    if (document.body.classList.contains("page--contact")) {
+        initFaqAccordion();
     }
 });

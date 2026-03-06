@@ -1228,6 +1228,12 @@ body.is-locked {
 }
 
 .contact__title {
+  margin-bottom: var(--space-2);
+}
+
+.conatct__text {
+  color: var(--color-text-muted);
+  padding-left: var(--space-2);
   margin-bottom: var(--space-4);
 }
 
@@ -1253,9 +1259,60 @@ body.is-locked {
   gap: var(--space-3);
 }
 
-.contact__text {
+.contact__description {
   margin-bottom: 0;
 }
-.contact__text:hover {
+.contact__description:hover {
   text-decoration: underline;
+}
+.contact__description::before {
+  content: "・・・・・・";
+  display: inline-block;
+  margin-right: var(--space-3);
+  letter-spacing: -12px;
+}
+
+.faq__title {
+  margin-bottom: var(--space-4);
+}
+
+.accordion {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-item {
+  border: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #fff !important;
+  color: var(--color-text-primary) !important;
+  box-shadow: none !important;
+}
+
+.faq__button {
+  font-weight: var(--font-weight-medium);
+}
+
+.faq__question {
+  display: inline-block;
+  margin-right: var(--space-2);
+}
+
+.faq__body {
+  background-color: #eef5f0;
+  padding-left: var(--space-4);
+  font-weight: var(--font-weight-regular);
+  display: flex;
+  gap: var(--space-2);
+}
+.faq__body::before {
+  content: "A.";
+  font-weight: bold;
+}
+
+@media screen and (max-width: 430px) {
+  .contact__description::before {
+    letter-spacing: -8px;
+  }
 }/*# sourceMappingURL=style.css.map */

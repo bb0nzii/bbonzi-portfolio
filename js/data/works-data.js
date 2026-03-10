@@ -3,6 +3,17 @@ export const worksData = [
   /* =========================
   Web Coding
   ========================= */
+  {
+    category: "coding",
+    title: "Link Hub",
+    desc: "SNS 링크와 포트폴리오를 모아둔 링크모음 및 방명록 사이트입니다.",
+    date: "제작 : 2026.03",
+    image: "assets/workspace/coding/linkhub.jpg",
+
+    tools: ["vuetify", "scss", "js", "firebase"],
+
+    link: "https://bb0nzii.github.io/link-hub/",
+  },
 
   {
     category: "coding",

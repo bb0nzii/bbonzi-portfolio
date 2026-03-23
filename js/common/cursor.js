@@ -1,17 +1,17 @@
 export default function initCursor() {
-  const maxTrails = 5;
+  const maxTrails = 1;
   const trails = [];
 
   document.addEventListener("mousemove", (e) => {
     const trail = document.createElement("img");
 
-    trail.src = "assets/logo/sunflower.png"; // ⚠️ 경로 수정 중요
+    trail.src = "assets/logo/sunflower.png";
     trail.style.position = "absolute";
     trail.style.width = "80px";
     trail.style.pointerEvents = "none";
     trail.style.left = `${e.pageX - 40}px`;
     trail.style.top = `${e.pageY - 40}px`;
-    trail.style.opacity = "0.25";
+    trail.style.opacity = "1";
     trail.style.transition = "opacity 0.5s ease-out";
     trail.style.zIndex = 1000;
 

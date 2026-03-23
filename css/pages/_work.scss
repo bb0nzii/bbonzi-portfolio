@@ -250,6 +250,14 @@
 
 @media (max-width: 1024px) {
 
+    .work-section {
+        padding: 0 !important;
+    }
+
+    .work_text {
+        padding: 0 5%;
+    }
+
     .work__card {
         // height: 560px;
         grid-template-columns: 1fr;
